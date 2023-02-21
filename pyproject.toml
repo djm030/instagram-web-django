@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "instagram-web-django"
+name = "instagram-web-django"       
 version = "0.1.0"
 description = ""
 authors = ["백관열 <djm030@naver.com>"]
@@ -9,6 +9,8 @@ packages = [{include = "instagram_web_django"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^4.1.7"
+pylint = "^2.16.2"
+black = "^23.1.0"
 
 
 [build-system]
