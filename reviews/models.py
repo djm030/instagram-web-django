@@ -14,8 +14,13 @@ class Review(CommonModel):
         max_length=100,
         default="",
     )
-    reviewer = models.ForeignKey(
+    user = models.ForeignKey(
         "users.User",
         on_delete=models.CASCADE,
-        related_name="reviewer",
+        related_name="reviews",
+    )
+    feed = models.ForeignKey(
+        "feeds.Feed",
+        on_delete=models.CASCADE,
+        related_name="reviews",
     )

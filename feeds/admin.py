@@ -4,4 +4,9 @@ from .models import Feed
 
 @admin.register(Feed)
 class FeedAdmin(admin.ModelAdmin):
-    list_display = ("caption", "likesNum", "reviewsNum", "Author")
+    list_display = (
+        "caption",
+        "likesNum",
+        "reviewsNum",
+        "user",
+    )

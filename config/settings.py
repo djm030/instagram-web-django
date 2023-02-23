@@ -44,7 +44,9 @@ CUSTOMED_APPS = [
     "reviews.apps.ReviewsConfig",
     "common.apps.CommonConfig",
 ]
-THIRDPARTY_APPS = []
+THIRDPARTY_APPS = [
+    "rest_framework",
+]
 
 INSTALLED_APPS = SYSTEMED_APPS + CUSTOMED_APPS + THIRDPARTY_APPS
 

@@ -23,8 +23,8 @@ class Feed(CommonModel):
     reviewsNum = models.PositiveIntegerField(
         default=0,
     )
-    Author = models.ForeignKey(
+    user = models.ForeignKey(
         "users.User",
         on_delete=models.CASCADE,
-        related_name="author",
+        related_name="feed",  # revers accesor에서 불러올 이름
     )

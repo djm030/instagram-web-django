@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/common": true,
+    "common": true,
+    "**/db.sqlite3": true,
+    "*.sqlite3": true,
+    "db.sqlite3": true,
+    "**/*.sqlite3": true
+  },
+  "explorerExclude.backup": {}
+}
