@@ -1,6 +1,9 @@
-from django.urls import path, include
-from . import views
+from django.urls import path
+from .views import MyInfo, Login, Logout
 
 urlpatterns = [
-    path("", views.MyInfo.as_view()),
+    path("myinfo", MyInfo.as_view()),
+    path("login", Login.as_view()),
+    path("logout", Logout.as_view()),
+    # path("jwtlogin", JWTLogin.as_view()),
 ]
